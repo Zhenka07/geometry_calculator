@@ -1,0 +1,79 @@
+[33mcommit ea83ada603bd7d61c75672c0370bb8ea1109e6ec[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mnew_features_501661[m[33m)[m
+Author: EvgeniyTolstov <e.t1801@yandex.ru>
+Date:   Fri Sep 12 12:40:59 2025 +0300
+
+    fixed the error in the file rectangle
+
+[1mdiff --git a/triangle.py b/triangle.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+
+[33mcommit e891d7f19a1faf606af15e551de826b69525e9d8[m
+Author: EvgeniyTolstov <e.t1801@yandex.ru>
+Date:   Fri Sep 12 12:31:28 2025 +0300
+
+    New file has been added
+
+[1mdiff --git a/rectangle.py b/rectangle.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+
+[33mcommit d078c8d9ee6155f3cb0e577d28d337b791de28e2[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+[1mdiff --git a/docs/README.md b/docs/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63f8727[m
+[1m--- /dev/null[m
+[1m+++ b/docs/README.md[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m# Math formulas[m
+[32m+[m[32m## Area[m
+[32m+[m[32m- Circle: S = πR²[m
+[32m+[m[32m- Rectangle: S = ab[m
+[32m+[m[32m- Square: S = a²[m
+[32m+[m
+[32m+[m[32m## Perimeter[m
+[32m+[m[32m- Circle: P = 2πR[m
+[32m+[m[32m- Rectangle: P = 2a + 2b[m
+[32m+[m[32m- Square: P = 4a[m
+\ No newline at end of file[m
+
+[33mcommit 8ba9aeb3cea847b63a91ac378a2a6db758682460[m
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
+
+[1mdiff --git a/circle.py b/circle.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c3eb864[m
+[1m--- /dev/null[m
+[1m+++ b/circle.py[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32mimport math[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef area(r):[m
+[32m+[m[32m    return math.pi * r * r[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef perimeter(r):[m
+[32m+[m[32m    return 2 * math.pi * r[m
+[32m+[m
+[1mdiff --git a/square.py b/square.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0f98724[m
+[1m--- /dev/null[m
+[1m+++ b/square.py[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m
+[32m+[m[32mdef area(a):[m
+[32m+[m[32m    return a * a[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef perimeter(a):[m
+[32m+[m[32m    return 4 * a[m

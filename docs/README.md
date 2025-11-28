@@ -19,9 +19,3 @@
 >```python
 >from square import area
 >area(5) #return: 25
->```
-+ `perimeter(r: (float|int))->(float|int)` - Функция принимает на вход сторону квадрата и возвращает его периметр. 
->```python
->from square import area
->area(5) #return: 20
->```
