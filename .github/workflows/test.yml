@@ -1,0 +1,40 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: [3.8, 3.9, '3.10']
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: Display Python version
+      run: python -c "import sys; print(f'Python {sys.version}')"
+      
+    - name: Run tests for square module
+      run: |
+        python -m unittest test_square.py -v
+        
+    - name: Run tests for circle module
+      run: |
+        python -m unittest test_circle.py -v
+        
+    - name: Run all tests
+      run: |
+        python -m unittest discover -v
