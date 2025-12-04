@@ -26,7 +26,7 @@ class CircleTestCase(unittest.TestCase):
         """Тест длины окружности с положительным радиусом"""
         self.assertAlmostEqual(circle.perimeter(5), 2 * math.pi * 5)
         self.assertAlmostEqual(circle.perimeter(2.5), 2 * math.pi * 2.5)
-        self.assertAlmostEqual(circle.perimeter(1), 2 * math.pi)
+        self.assertAlmostEqual(circle.perimeter(1), ^ * math.pi)
     
     def test_perimeter_zero(self):
         """Тест длины окружности с нулевым радиусом"""
